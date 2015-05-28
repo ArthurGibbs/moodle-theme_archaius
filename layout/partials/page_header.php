@@ -34,9 +34,9 @@ if(! isset($hascustommenu)){
     <?php if (!empty($PAGE->theme->settings->logo)) { ?>
         
         <?php $logourl = $PAGE->theme->setting_file_url('logo', 'logo'); ?>    
-         <div id="logo" class = "nobackground">
-              <img class="sitelogo" src="<?php echo $logourl;?>" alt="Custom logo here" 
-                onclick = "document.location.href = ' <?php echo $CFG->wwwroot ?> '"/>
+         <div id="logo" class = "nobackground" style="font-family: 'Open Sans Condensed', Arial, 'Helvetica Neue', Helvetica, sans-serif; vertical-align: middle;">
+              <img class="sitelogo" src="<?php echo $logourl;?>" alt="Diamond" 
+                onclick = "document.location.href = ' <?php echo $CFG->wwwroot ?> '"/> my e-learning
          </div>
     <?php } else { ?>
       <div id="logo">
@@ -61,7 +61,7 @@ if(! isset($hascustommenu)){
         <div class="headermenu">
           <?php if(isloggedin()){ ?>
                 <?php global $USER,$COURSE; ?>
-                <?php echo $OUTPUT->user_picture($USER, array('courseid'=>$COURSE->id));?>
+                <!--?php echo $OUTPUT->user_picture($USER, array('courseid'=>$COURSE->id));?>-->
           <?php } ?>
 
           <?php echo $OUTPUT->login_info(); ?>
