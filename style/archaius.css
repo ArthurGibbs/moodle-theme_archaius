@@ -99,18 +99,21 @@ textarea {
   margin: 0 auto;
   padding-top: 30px;
   max-width: 1200px;
-  min-height: 110px;
+  min-height: 46px;
   width: 90%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  vertical-align: middle;
 }
 #logo,
 #mobile-logo {
   width: 45%;
   height: 100%;
   float: left;
-  max-height: 150px;
+  max-height: 46px;
   cursor: pointer;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -590,7 +593,7 @@ td.eventskey {
 -------------------------------------------------------------- */
 #page-footer {
   padding-top: 10px;
-  background: [[setting:themecolor]];
+  background: #4c4c4c;
   color: #fff;
   min-height: 150px;
   width: 100%;
