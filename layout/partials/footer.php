@@ -47,10 +47,12 @@ if ($hasfooter) { ?>
         <?php if (!empty($PAGE->theme->settings->footnote)) { ?>
             <?php echo $PAGE->theme->settings->footnote; ?>
         <?php }?>
-
-        <?php
-        echo $OUTPUT->login_info();
-        ?>
+		<div style=" text-align: center; border= 5px;">
+			<div style="text-align:right; border= 5px; max-width:980px; width: 90%; margin-left: auto ; margin-right: auto ;">
+				<?php echo $OUTPUT->login_info(); ?>
+			</div>
+		</div>
+		
         <p>
 
         </p>
